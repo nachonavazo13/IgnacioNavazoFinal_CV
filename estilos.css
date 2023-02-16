@@ -1,0 +1,80 @@
+/*Importamos las fuentes a utilizar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&family=Titillium+Web:wght@200;600;700&display=swap');
+
+
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Seccion Inicio*/
+
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("12.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/*Esto es para poner las lineas del menu laterales*/
+
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 40px;
+    background-color: #940253;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Yellowtail;
+    text-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion header .logo .color{
+    color: #940253;
+    font-family: Yellowtail;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #940253;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 3s;
+}
