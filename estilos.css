@@ -115,5 +115,6 @@ html{
     height: 40px;
     line-height: 40px;
     margin: 0 5px;
+    transition: .3s;
 
 }
