@@ -118,3 +118,9 @@ html{
     transition: .3s;
 
 }
+
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
