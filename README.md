@@ -1,2 +1,2 @@
-# IgnacioNvazo_CV
+# IgnacioNavazo_CV
 ProyectoArgentinaPrograma
