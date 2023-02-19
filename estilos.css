@@ -37,7 +37,7 @@ html{
 
 .inicio .contenido-seccion header nav{
     position: fixed;
-    margin-left: 40px;
+    margin-left: 60px;
     background-color: #940253;
     padding: 15px;
     border-radius: 10px;
@@ -327,4 +327,37 @@ html{
 .resumen .contenido-seccion .info .col table .descripcion{
     border-left: 1px solid #bab9ba;
     padding-left: 20px;
+}
+
+/*Seccion Contacto*/
+
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+
+.contacto .contenido-seccion .fila .col h2{
+    color: #940253;
 }
