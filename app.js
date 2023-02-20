@@ -62,7 +62,40 @@ crearBarra(ilustrator);
 // Inicia en -1 por que no tiene ninguna celda pintada.
 
 let contadores = [-1,-1,-1,-1,-1,-1]
+// Esta variable es una bandera, para saber si ya se ejecuto la animacion
+let entro = false;
 
+// Funcion que aplica la animacion de las habilidades.
+
+function efectoHabilidades(){
+    var habilidades = document.getElementById("habilidades");
+    var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
+    if(distancia_skills >= 300 && entro == false){
+        entro = true;
+        const intervalHtml = setInterval(function(){
+            pintarBarra(html,16 , 0, intervalHtml);
+        },100);
+    }
+}
+
+// LLeno una barra con la cantidad indicada
+
+function pintarBarra(id_barra, cantidad, indice, interval){
+    contadores[indice]++;
+    x = contadores[indice];
+    if(x < cantidad){
+        let elementos = id_barra.getElementByClassName("e");
+        elementos[x].style.backgroundColor = "#940253";
+    } else{
+        clearInterval(interval)
+    }
+}
+
+// Detecto el scroll del mouse para aplicar animacion
+
+window.onscroll = function(){
+    efectoHabilidades();
+}
 
 
 
