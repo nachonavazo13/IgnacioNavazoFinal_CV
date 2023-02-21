@@ -70,10 +70,10 @@ let entro = false;
 function efectoHabilidades(){
     var habilidades = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
-    if(distancia_skills >= 300 && entro == false){
+    if(distancia_skills>=300 && entro==false){
         entro = true;
         const intervalHtml = setInterval(function(){
-            pintarBarra(html, 16, 1, intervalHtml);
+            pintarBarra(html, 16, 0, intervalHtml);
         },100);
     }
 }
