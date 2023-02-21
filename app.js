@@ -37,8 +37,8 @@ function crearBarra(id_barra){
 
 // Seleccionar todas las barras generales para luego manipularlas
 
-let html = document.getElementById("html");
-crearBarra(html);
+let tt = document.getElementById("tt");
+crearBarra(tt);
 
 let javascript = document.getElementById("javascript");
 crearBarra(javascript);
@@ -65,8 +65,8 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
     if(distancia_skills>=300 && entro==false){
         entro = true;
-        const intervalHtml = setInterval(function(){
-            pintarBarra(html, 17, 0, intervalHtml);
+        const intervalTt = setInterval(function(){
+            pintarBarra(tt, 17, 0, intervalTt);
         },100);
         const intervalJavascript = setInterval(function(){
             pintarBarra(javascript, 12, 1, intervalJavascript);
