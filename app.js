@@ -61,7 +61,7 @@ crearBarra(ilustrator);
 
 // Inicia en -1 por que no tiene ninguna celda pintada.
 
-let contadores = [-1,-1,-1,-1,-1,-1]
+let contadores = [-1,-1,-1,-1,-1,-1];
 // Esta variable es una bandera, para saber si ya se ejecuto la animacion
 let entro = false;
 
@@ -73,7 +73,7 @@ function efectoHabilidades(){
     if(distancia_skills >= 300 && entro == false){
         entro = true;
         const intervalHtml = setInterval(function(){
-            pintarBarra(html,16 , 0, intervalHtml);
+            pintarBarra(html, 16, 1, intervalHtml);
         },100);
     }
 }
