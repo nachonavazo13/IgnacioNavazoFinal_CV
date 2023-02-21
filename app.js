@@ -40,20 +40,20 @@ function crearBarra(id_barra){
 let tt = document.getElementById("tt");
 crearBarra(tt);
 
-let javascript = document.getElementById("javascript");
-crearBarra(javascript);
+let av = document.getElementById("av");
+crearBarra(av);
 
-let wordpress = document.getElementById("wordpress");
-crearBarra(wordpress);
+let sc = document.getElementById("sc");
+crearBarra(sc);
 
-let photoshop = document.getElementById("photoshop");
-crearBarra(photoshop);
+let es = document.getElementById("es");
+crearBarra(es);
 
-let php = document.getElementById("php");
-crearBarra(php);
+let ae = document.getElementById("ae");
+crearBarra(ae);
 
-let ilustrator = document.getElementById("ilustrator");
-crearBarra(ilustrator);
+let ps = document.getElementById("ps");
+crearBarra(ps);
 
 let contadores = [-1,-1,-1,-1,-1,-1];
 //esta variable la voy a utilizar de bandera para saber si ya ejecuto la animación
@@ -68,20 +68,20 @@ function efectoHabilidades(){
         const intervalTt = setInterval(function(){
             pintarBarra(tt, 17, 0, intervalTt);
         },100);
-        const intervalJavascript = setInterval(function(){
-            pintarBarra(javascript, 12, 1, intervalJavascript);
+        const intervalAv = setInterval(function(){
+            pintarBarra(av, 12, 1, intervalAv);
         },100);
-        const intervalWordpress = setInterval(function(){
-            pintarBarra(wordpress, 15, 2, intervalWordpress);
+        const intervalSc = setInterval(function(){
+            pintarBarra(sc, 15, 2, intervalSc);
         },100);
-        const intervalPhotoshop = setInterval(function(){
-            pintarBarra(photoshop, 14, 3, intervalPhotoshop);
+        const intervalEs = setInterval(function(){
+            pintarBarra(es, 14, 3, intervalEs);
         },100);
-        const intervalPhp = setInterval(function(){
-            pintarBarra(php, 16, 4, intervalPhp);
+        const intervalAe = setInterval(function(){
+            pintarBarra(ae, 16, 4, intervalAe);
         },100);
-        const intervalIlustrator = setInterval(function(){
-            pintarBarra(ilustrator, 13, 5, intervalIlustrator);
+        const intervalPs = setInterval(function(){
+            pintarBarra(ps, 13, 5, intervalPs);
         },100);
     }
 }
