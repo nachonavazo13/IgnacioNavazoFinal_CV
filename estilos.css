@@ -132,7 +132,7 @@ html{
 .inicio .contenido-seccion .foto img{
     max-width: 185px;
     border-radius: 50%;
-    border: 5px solid #940253;
+    border: 3px solid #940253;
     position: absolute;
     left: 50%;
     top: -137px;
