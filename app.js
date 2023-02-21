@@ -55,7 +55,7 @@ crearBarra(php);
 let ilustrator = document.getElementById("ilustrator");
 crearBarra(ilustrator);
 
-// Se eliminaron los elementos "e" del index.html 1hs 03'
+// Se eliminaron los elementos "e" del index.html
 
 // Marco el porcentaje en las barras (Pintamos la barra segun el %).
 
@@ -64,6 +64,9 @@ crearBarra(ilustrator);
 let contadores = [-1,-1,-1,-1,-1,-1];
 // Esta variable es una bandera, para saber si ya se ejecuto la animacion
 let entro = false;
+
+
+// LLeno una barra con la cantidad indicada
 
 // Funcion que aplica la animacion de las habilidades.
 
@@ -74,6 +77,9 @@ function efectoHabilidades(){
         entro = true;
         const intervalHtml = setInterval(function(){
             pintarBarra(html, 16, 0, intervalHtml);
+        },100);
+        const intervalJavascript = setInterval(function(){
+            pintarBarra(javascript, 11, 1, intervalJavascript);
         },100);
     }
 }
