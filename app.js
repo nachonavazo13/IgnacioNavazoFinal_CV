@@ -14,7 +14,7 @@ function MostrarOcultarMenu(){
     }
 }
 
-// Ocultar el menu una vez que se selecciono la opción.
+// Ocultar el menu una vez que se selecciono la opción
 
 let links = document.querySelectorAll("nav a");
 for(var x = 0; x < links.length; x++){
@@ -55,21 +55,11 @@ crearBarra(php);
 let ilustrator = document.getElementById("ilustrator");
 crearBarra(ilustrator);
 
-// Se eliminaron los elementos "e" del index.html
-
-// Marco el porcentaje en las barras (Pintamos la barra segun el %).
-
-// Inicia en -1 por que no tiene ninguna celda pintada.
-
 let contadores = [-1,-1,-1,-1,-1,-1];
-// Esta variable es una bandera, para saber si ya se ejecuto la animacion
+//esta variable la voy a utilizar de bandera para saber si ya ejecuto la animación
 let entro = false;
 
-
-// LLeno una barra con la cantidad indicada
-
-// Funcion que aplica la animacion de las habilidades.
-
+//función que aplica las animaciones de la habilidades
 function efectoHabilidades(){
     var habilidades = document.getElementById("habilidades");
     var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
@@ -81,24 +71,34 @@ function efectoHabilidades(){
         const intervalJavascript = setInterval(function(){
             pintarBarra(javascript, 11, 1, intervalJavascript);
         },100);
+        const intervalWordpress = setInterval(function(){
+            pintarBarra(wordpress, 11, 2, intervalWordpress);
+        },100);
+        const intervalPhotoshop = setInterval(function(){
+            pintarBarra(photoshop, 15, 3, intervalPhotoshop);
+        },100);
+        const intervalPhp = setInterval(function(){
+            pintarBarra(php, 16, 4, intervalPhp);
+        },100);
+        const intervalIlustrator = setInterval(function(){
+            pintarBarra(ilustrator, 11, 5, intervalIlustrator);
+        },100);
     }
 }
 
-// LLeno una barra con la cantidad indicada
-
+//lleno una barra particular con la cantidad indicada
 function pintarBarra(id_barra, cantidad, indice, interval){
     contadores[indice]++;
     x = contadores[indice];
     if(x < cantidad){
-        let elementos = id_barra.getElementByClassName("e");
+        let elementos = id_barra.getElementsByClassName("e");
         elementos[x].style.backgroundColor = "#940253";
-    } else{
+    }else{
         clearInterval(interval)
     }
 }
 
-// Detecto el scroll del mouse para aplicar animacion
-
+//detecto el scrolling del mouse para aplicar la animación de la barra
 window.onscroll = function(){
     efectoHabilidades();
 }
